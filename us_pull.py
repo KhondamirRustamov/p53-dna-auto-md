@@ -9,9 +9,7 @@ file_results.write('name,pull_max,\n')
 
 for i in glob.glob('*.zip'):
     name = i.split('.')[0]
-    if len(glob.glob(f'{name}/*pullf.xvg'))>=1:
-        continue
-    print(name)
+
     print(name)
     os.system(f'gmx editconf -f {name}/{name}_final_us.gro -o {name}/{name}_us_newbox.gro -center 4 4 3.5 -box 8 8 26')
     

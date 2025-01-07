@@ -6,9 +6,7 @@ import MDAnalysis as mda
 
 for i in glob.glob('*.zip'):
     name = i.split('.')[0]
-    
-    if len(glob.glob(f'{name}/{name}_final2*'))>=1:
-        continue
+
     print(name)
     
     #os.system(f'unzip {i} -d {name}')
