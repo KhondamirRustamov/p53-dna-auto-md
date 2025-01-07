@@ -5,7 +5,7 @@ import MDAnalysis as mda
 from MDAnalysis.analysis import align
 
 
-new_list = ['fold_a276s', 'fold_e285a']
+new_list = glob.glob('*.zip')
 for i in new_list:
     
     name = i.split('.')[0]
